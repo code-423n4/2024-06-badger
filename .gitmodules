@@ -1,0 +1,9 @@
+[submodule "ebtc-zap-router/lib/ebtc"]
+	path = ebtc-zap-router/lib/ebtc
+	url = https://github.com/ebtc-protocol/ebtc
+[submodule "ebtc-zap-router/lib/forge-std"]
+	path = ebtc-zap-router/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
+[submodule "ebtc-zap-router/lib/properties"]
+	path = ebtc-zap-router/lib/properties
+	url = https://github.com/crytic/properties
