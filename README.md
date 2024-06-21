@@ -55,10 +55,10 @@ Some of the checklists in this doc are for **C4 (🐺)** and some of them are fo
 
 # Badger audit details
 - Total Prize Pool: $40,000 in USDC
-  - HM awards: $32,640 in USDC
-  - QA awards: $1,360 in USDC 
+  - HM awards: $31,875 in USDC
+  - QA awards: $1,325 in USDC 
   - Judge awards: $3,300 in USDC
-  - Lookout awards: $2,200 USDC 
+  - Validator awards: $3,000 USDC 
   - Scout awards: $500 USDC 
 - Join [C4 Discord](https://discord.gg/code4rena) to register
 - Submit findings [using the C4 form](https://code4rena.com/contests/2024-06-badger/submit)
