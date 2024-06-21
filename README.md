@@ -1,4 +1,5 @@
 
+
 # Badger audit details
 - Total Prize Pool: $40,000 in USDC
   - HM awards: $31,875 in USDC
@@ -29,14 +30,14 @@ The 4naly3er report can be found [here](https://github.com/code-423n4/2024-06-ba
 
 _Note for C4 wardens: Anything included in this `Automated Findings / Publicly Known Issues` section is considered a publicly known issue and is ineligible for awards._
 
-- rounding error from (stETH/wstETH) conversion
-- owner is TechOps multisig
-- we did not add ERC20 Permits, we could add them later
-- we assume the user will chose the correct external function based on their collateral type (ETH/WETH/stETH/wstETH)
+- Rounding error from (stETH/wstETH) conversion
+- Owner is TechOps multisig
+- We did not add ERC20 Permits, we could add them later
+- We assume the user will chose the correct external function based on their collateral type (ETH/WETH/stETH/wstETH)
 - DEX is hardcoded and will either be 0x or 1Inch
 - A user is expected to rationally chose between normal zap router and leverage zap router
 
-✅ SCOUTS: Please format the response above 👆 so its not a wall of text and its readable.
+
 
 # Overview
 
@@ -45,69 +46,43 @@ _Note for C4 wardens: Anything included in this `Automated Findings / Publicly K
 ## Links
 
 - **Previous audits:**  https://gist.github.com/GalloDaSballo/4e345cec4e3aef9682f320149b3027aa
-  - ✅ SCOUTS: If there are multiple report links, please format them in a list.
 - **Documentation:** https://github.com/ebtc-protocol/ebtc-zap-router/blob/main/README.md
-- **Website:** 🐺 CA: add a link to the sponsor's website
-- **X/Twitter:** 🐺 CA: add a link to the sponsor's Twitter
-- **Discord:** 🐺 CA: add a link to the sponsor's Discord
+- **Website:** https://badger.com/
+- **X/Twitter:** https://twitter.com/badgerdao
+- **Discord:** https://discord.gg/badgerdao
 
 ---
 
 # Scope
 
-[ ✅ SCOUTS: add scoping and technical details here ]
+
 
 ### Files in scope
-- ✅ This should be completed using the `metrics.md` file
-- ✅ Last row of the table should be Total: SLOC
-- ✅ SCOUTS: Have the sponsor review and and confirm in text the details in the section titled "Scoping Q amp; A"
 
-*For sponsors that don't use the scoping tool: list all files in scope in the table below (along with hyperlinks) -- and feel free to add notes to emphasize areas of focus.*
-
-| Contract | SLOC | Purpose | Libraries used |  
-| ----------- | ----------- | ----------- | ----------- |
-| [contracts/folder/sample.sol](https://github.com/code-423n4/repo-name/blob/contracts/folder/sample.sol) | 123 | This contract does XYZ | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
+| Contract                                                                                                                                         | SLOC | Purpose | Libraries used |
+| ------------------------------------------------------------------------------------------------------------------------------------------------ |:---- | ------- | -------------- |
+| [EbtcLeverageZapRouter.sol](https://github.com/code-423n4/2024-06-badger/blob/main/ebtc-zap-router/src/EbtcLeverageZapRouter.sol)                | 254  |         |                |
+| [LeverageZapRouterBase.sol](https://github.com/code-423n4/2024-06-badger/blob/main/ebtc-zap-router/src/LeverageZapRouterBase.sol)                | 216  |         |                |
+| [ZapRouterBase.sol](https://github.com/code-423n4/2024-06-badger/blob/main/ebtc-zap-router/src/ZapRouterBase.sol)                                | 116  |         |                |
+| [IEbtcLeverageZapRouter.sol](https://github.com/code-423n4/2024-06-badger/blob/main/ebtc-zap-router/src/interface/IEbtcLeverageZapRouter.sol)    | 37   |         |                |
+| [LeverageMacroBase.sol](https://github.com/code-423n4/2024-06-badger/blob/main/ebtc-protocol/packages/contracts/contracts/LeverageMacroBase.sol) | 383  |         |                |
+| TOTAL                                                                                                                                            | 1006 |         |                |
 
 ### Files out of scope
-✅ SCOUTS: List files/directories out of scope
+All files not in the scope table are Out Of Scope
 
 ## Scoping Q &amp; A
 
 ### General questions
-### Are there any ERC20's in scope?: Yes
 
-✅ SCOUTS: If the answer above 👆 is "Yes", please add the tokens below 👇 to the table. Otherwise, update the column with "None".
-
-Specific tokens (please specify)
-eBTC, stETH
-
-### Are there any ERC777's in scope?: No
-
-✅ SCOUTS: If the answer above 👆 is "Yes", please add the tokens below 👇 to the table. Otherwise, update the column with "None".
-
-
-
-### Are there any ERC721's in scope?: No
-
-✅ SCOUTS: If the answer above 👆 is "Yes", please add the tokens below 👇 to the table. Otherwise, update the column with "None".
-
-
-
-### Are there any ERC1155's in scope?: No
-
-✅ SCOUTS: If the answer above 👆 is "Yes", please add the tokens below 👇 to the table. Otherwise, update the column with "None".
-
-
-
-✅ SCOUTS: Once done populating the table below, please remove all the Q/A data above.
 
 | Question                                | Answer                       |
 | --------------------------------------- | ---------------------------- |
-| ERC20 used by the protocol              |       🖊️             |
+| ERC20 used by the protocol              |       eBTC, stETH             |
 | Test coverage                           | ✅ SCOUTS: Please populate this after running the test coverage command                          |
-| ERC721 used  by the protocol            |            🖊️              |
-| ERC777 used by the protocol             |           🖊️                |
-| ERC1155 used by the protocol            |              🖊️            |
+| ERC721 used  by the protocol            |            None              |
+| ERC777 used by the protocol             |           None                |
+| ERC1155 used by the protocol            |              None            |
 | Chains the protocol will be deployed on | Ethereum |
 
 ### ERC20 token behaviors in scope
@@ -145,46 +120,33 @@ eBTC, stETH
 ### EIP compliance checklist
 N/A
 
-✅ SCOUTS: Please format the response above 👆 using the template below👇
-
-| Question                                | Answer                       |
-| --------------------------------------- | ---------------------------- |
-| src/Token.sol                           | ERC20, ERC721                |
-| src/NFT.sol                             | ERC721                       |
 
 
 # Additional context
 
 ## Main invariants
 
-- position manager permit needs to be revoked after each operation
+- Position manager permit needs to be revoked after each operation
 - ZapRouter contract should not hold any CDP positions
 - ZapRouter contract should not have any tokens after each operation (aside from rounding)
 
-✅ SCOUTS: Please format the response above 👆 so its not a wall of text and its readable.
-
 ## Attack ideas (where to focus for bugs)
-- fee should be assessed only when debt increases
-- owner cannot execute arbitrary calls
+- Fee should be assessed only when debt increases
+- Owner cannot execute arbitrary calls
 
-✅ SCOUTS: Please format the response above 👆 so its not a wall of text and its readable.
 
 ## All trusted roles in the protocol
 
-TechOps multisig can rescue tokens
-
-✅ SCOUTS: Please format the response above 👆 using the template below👇
 
 | Role                                | Description                       |
 | --------------------------------------- | ---------------------------- |
-| Owner                          | Has superpowers                |
-| Administrator                             | Can change fees                       |
+| TechOps multisig                          | Can rescue tokens             |
+
 
 ## Describe any novel or unique curve logic or mathematical models implemented in the contracts:
 
 N/A
 
-✅ SCOUTS: Please format the response above 👆 so its not a wall of text and its readable.
 
 ## Running tests
 
