@@ -143,7 +143,7 @@ N/A
 | TechOps multisig                          | Can rescue tokens             |
 
 
-## Describe any novel or unique curve logic or mathematical models implemented in the contracts:
+## Any novel or unique curve logic or mathematical models implemented in the contracts:
 
 N/A
 
