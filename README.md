@@ -41,7 +41,13 @@ _Note for C4 wardens: Anything included in this `Automated Findings / Publicly K
 
 # Overview
 
-[ ⭐️ SPONSORS: add info here ]
+Route between different zaps and functionality.
+
+## Key Functions
+* One-click Leverage: use flash loans via leverage macro to lever loop in one action
+* Flippening: a wrapper on leverage where you sell the final eBTC for more stETH (lever long ETH)
+* Native ETH: Deposit from native ETH and auto-wrap into stETH
+* ETH Variants deposits: come from WETH and wstETH as well for convenience
 
 ## Links
 
@@ -61,11 +67,11 @@ _Note for C4 wardens: Anything included in this `Automated Findings / Publicly K
 
 | Contract                                                                                                                                         | SLOC | Purpose | Libraries used |
 | ------------------------------------------------------------------------------------------------------------------------------------------------ |:---- | ------- | -------------- |
-| [EbtcLeverageZapRouter.sol](https://github.com/code-423n4/2024-06-badger/blob/main/ebtc-zap-router/src/EbtcLeverageZapRouter.sol)                | 254  |         |                |
-| [LeverageZapRouterBase.sol](https://github.com/code-423n4/2024-06-badger/blob/main/ebtc-zap-router/src/LeverageZapRouterBase.sol)                | 216  |         |                |
-| [ZapRouterBase.sol](https://github.com/code-423n4/2024-06-badger/blob/main/ebtc-zap-router/src/ZapRouterBase.sol)                                | 116  |         |                |
-| [IEbtcLeverageZapRouter.sol](https://github.com/code-423n4/2024-06-badger/blob/main/ebtc-zap-router/src/interface/IEbtcLeverageZapRouter.sol)    | 37   |         |                |
-| [LeverageMacroBase.sol](https://github.com/code-423n4/2024-06-badger/blob/main/ebtc-protocol/packages/contracts/contracts/LeverageMacroBase.sol) | 383  |         |                |
+| [EbtcLeverageZapRouter.sol](https://github.com/code-423n4/2024-06-badger/blob/main/ebtc-zap-router/src/EbtcLeverageZapRouter.sol)                | 254  | Main swap router contract that defines user facing external functions        | N/A               |
+| [LeverageZapRouterBase.sol](https://github.com/code-423n4/2024-06-badger/blob/main/ebtc-zap-router/src/LeverageZapRouterBase.sol)                | 216  | Base contract that implements functions for zap routers that use leverage        | N/A               |
+| [ZapRouterBase.sol](https://github.com/code-423n4/2024-06-badger/blob/main/ebtc-zap-router/src/ZapRouterBase.sol)                                | 116  | Base contract that implements functions for all zap routers        | N/A                |
+| [IEbtcLeverageZapRouter.sol](https://github.com/code-423n4/2024-06-badger/blob/main/ebtc-zap-router/src/interface/IEbtcLeverageZapRouter.sol)    | 37   | Leverage zap router interface contract and types        | N/A               |
+| [LeverageMacroBase.sol](https://github.com/code-423n4/2024-06-badger/blob/main/ebtc-protocol/packages/contracts/contracts/LeverageMacroBase.sol) | 383  | Base contract that performs flash loans, CDP operations and DEX swaps        | N/A                |
 | TOTAL                                                                                                                                            | 1006 |         |                |
 
 ### Files out of scope
