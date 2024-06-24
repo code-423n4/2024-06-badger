@@ -13,15 +13,6 @@
 - Starts June 24, 2024 20:00 UTC
 - Ends July 8, 2024 20:00 UTC
 
-## This is a Private audit
-
-This audit repo and its Discord channel are accessible to **certified wardens only.** Participation in private audits is bound by:
-
-1. Code4rena's [Certified Contributor Terms and Conditions](https://github.com/code-423n4/code423n4.com/blob/main/_data/pages/certified-contributor-terms-and-conditions.md)
-2. C4's [Certified Contributor Code of Professional Conduct](https://code4rena.notion.site/Code-of-Professional-Conduct-657c7d80d34045f19eee510ae06fef55)
-
-*All discussions regarding private audits should be considered private and confidential, unless otherwise indicated.*
-
 ## Automated Findings / Publicly Known Issues
 
 The 4naly3er report can be found [here](https://github.com/code-423n4/2024-06-badger/blob/main/4naly3er-report.md).
