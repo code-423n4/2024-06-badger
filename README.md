@@ -172,7 +172,7 @@ forge coverage
 
 | File                                                                        | % Lines            | % Statements       | % Branches        | % Funcs           |
 |-----------------------------------------------------------------------------|--------------------|--------------------|-------------------|-------------------|
-| Total                                                                       |<font color="#E9AD0C"> 72.80% (3471/4768) </font>|<font color="#E9AD0C"> 72.15% (4385/6078) </font>|<font color="#E9AD0C"> 56.18% (850/1513) </font>|<font color="#E9AD0C"> 57.22% (622/1087) </font>|
+| Total                                                                       | 72.80% (3471/4768) | 72.15% (4385/6078) | 56.18% (850/1513) | 57.22% (622/1087) |
 
 For `ebtc-zap-router` tests;
 ```bash
@@ -194,23 +194,23 @@ forge coverage
 
 | File                                                | % Lines           | % Statements      | % Branches       | % Funcs          |
 |-----------------------------------------------------|-------------------|-------------------|------------------|------------------|
-| script/DeployEbtcZapRouter.sol                      |<font color="#F66151"> 0.00% (0/11)      </font>|<font color="#F66151"> 0.00% (0/19)      </font>|<font color="#8B8A88"> 100.00% (0/0)    </font>|<font color="#F66151"> 0.00% (0/1)      </font>|
-| src/EbtcLeverageZapRouter.sol                       |<font color="#33DA7A"> 85.19% (69/81)    </font>|<font color="#33DA7A"> 83.33% (90/108)   </font>|<font color="#E9AD0C"> 67.65% (23/34)   </font>|<font color="#33DA7A"> 75.00% (12/16)   </font>|
-| src/EbtcZapRouter.sol                               |<font color="#33DA7A"> 88.16% (67/76)    </font>|<font color="#33DA7A"> 90.00% (81/90)    </font>|<font color="#F66151"> 46.43% (13/28)   </font>|<font color="#33DA7A"> 88.89% (16/18)   </font>|
-| src/LeverageZapRouterBase.sol                       |<font color="#33DA7A"> 80.00% (56/70)    </font>|<font color="#33DA7A"> 81.08% (60/74)    </font>|<font color="#E9AD0C"> 61.11% (11/18)   </font>|<font color="#33DA7A"> 78.57% (11/14)   </font>|
-| src/ZapRouterBase.sol                               |<font color="#33DA7A"> 89.19% (33/37)    </font>|<font color="#33DA7A"> 92.73% (51/55)    </font>|<font color="#E9AD0C"> 60.00% (6/10)    </font>|<font color="#33DA7A"> 90.91% (10/11)   </font>|
-| src/invariants/ZapRouterActor.sol                   |<font color="#F66151"> 31.58% (6/19)     </font>|<font color="#F66151"> 19.05% (4/21)     </font>|<font color="#F66151"> 25.00% (2/8)     </font>|<font color="#E9AD0C"> 66.67% (2/3)     </font>|
-| src/invariants/ZapRouterProperties.sol              |<font color="#F66151"> 0.00% (0/5)       </font>|<font color="#F66151"> 0.00% (0/14)      </font>|<font color="#8B8A88"> 100.00% (0/0)    </font>|<font color="#F66151"> 0.00% (0/5)      </font>|
-| src/invariants/ZapRouterStateSnapshots.sol          |<font color="#F66151"> 0.00% (0/107)     </font>|<font color="#F66151"> 0.00% (0/109)     </font>|<font color="#F66151"> 0.00% (0/48)     </font>|<font color="#F66151"> 0.00% (0/3)      </font>|
-| src/testContracts/UniswapV3CollAdapter.sol          |<font color="#F66151"> 0.00% (0/62)      </font>|<font color="#F66151"> 0.00% (0/80)      </font>|<font color="#F66151"> 0.00% (0/20)     </font>|<font color="#F66151"> 0.00% (0/3)      </font>|
-| src/testContracts/WstETH.sol                        |<font color="#F66151"> 35.56% (48/135)   </font>|<font color="#F66151"> 32.35% (55/170)   </font>|<font color="#F66151"> 18.33% (11/60)   </font>|<font color="#F66151"> 30.91% (17/55)   </font>|
-| test/ZapRouterBaseInvariants.sol                    |<font color="#33DA7A"> 100.00% (52/52)   </font>|<font color="#33DA7A"> 100.00% (63/63)   </font>|<font color="#E9AD0C"> 50.00% (4/8)     </font>|<font color="#33DA7A"> 100.00% (13/13)  </font>|
-| test/invariants/TargetFunctionsBase.sol             |<font color="#33DA7A"> 95.08% (58/61)    </font>|<font color="#33DA7A"> 96.05% (73/76)    </font>|<font color="#E9AD0C"> 50.00% (12/24)   </font>|<font color="#33DA7A"> 80.00% (8/10)    </font>|
-| test/invariants/TargetFunctionsNoLeverage.sol       |<font color="#F66151"> 0.00% (0/175)     </font>|<font color="#F66151"> 0.00% (0/213)     </font>|<font color="#F66151"> 0.00% (0/48)     </font>|<font color="#F66151"> 0.00% (0/12)     </font>|
-| test/invariants/TargetFunctionsWithLeverage.sol     |<font color="#E9AD0C"> 67.08% (108/161)  </font>|<font color="#E9AD0C"> 65.44% (142/217)  </font>|<font color="#F66151"> 36.67% (22/60)   </font>|<font color="#E9AD0C"> 60.71% (17/28)   </font>|
-| test/invariants/echidna/EchidnaLeverageTester.sol   |<font color="#F66151"> 0.00% (0/2)       </font>|<font color="#F66151"> 0.00% (0/2)       </font>|<font color="#8B8A88"> 100.00% (0/0)    </font>|<font color="#F66151"> 0.00% (0/1)      </font>|
-| test/invariants/echidna/EchidnaNoLeverageTester.sol |<font color="#F66151"> 0.00% (0/2)       </font>|<font color="#F66151"> 0.00% (0/2)       </font>|<font color="#8B8A88"> 100.00% (0/0)    </font>|<font color="#F66151"> 0.00% (0/1)      </font>|
-| Total                                               |<font color="#F66151"> 47.06% (497/1056) </font>|<font color="#F66151"> 47.14% (619/1313) </font>|<font color="#F66151"> 28.42% (104/366) </font>|<font color="#E9AD0C"> 54.64% (106/194) </font>|
+| script/DeployEbtcZapRouter.sol                      | 0.00% (0/11)      | 0.00% (0/19)      | 100.00% (0/0)    | 0.00% (0/1)      |
+| src/EbtcLeverageZapRouter.sol                       | 85.19% (69/81)    | 83.33% (90/108)   | 67.65% (23/34)   | 75.00% (12/16)   |
+| src/EbtcZapRouter.sol                               | 88.16% (67/76)    | 90.00% (81/90)    | 46.43% (13/28)   | 88.89% (16/18)   |
+| src/LeverageZapRouterBase.sol                       | 80.00% (56/70)    | 81.08% (60/74)    | 61.11% (11/18)   | 78.57% (11/14)   |
+| src/ZapRouterBase.sol                               | 89.19% (33/37)    | 92.73% (51/55)    | 60.00% (6/10)    | 90.91% (10/11)   |
+| src/invariants/ZapRouterActor.sol                   | 31.58% (6/19)     | 19.05% (4/21)     | 25.00% (2/8)     | 66.67% (2/3)     |
+| src/invariants/ZapRouterProperties.sol              | 0.00% (0/5)       | 0.00% (0/14)      | 100.00% (0/0)    | 0.00% (0/5)      |
+| src/invariants/ZapRouterStateSnapshots.sol          | 0.00% (0/107)     | 0.00% (0/109)     | 0.00% (0/48)     | 0.00% (0/3)      |
+| src/testContracts/UniswapV3CollAdapter.sol          | 0.00% (0/62)      | 0.00% (0/80)      | 0.00% (0/20)     | 0.00% (0/3)      |
+| src/testContracts/WstETH.sol                        | 35.56% (48/135)   | 32.35% (55/170)   | 18.33% (11/60)   | 30.91% (17/55)   |
+| test/ZapRouterBaseInvariants.sol                    | 100.00% (52/52)   | 100.00% (63/63)   | 50.00% (4/8)     | 100.00% (13/13)  |
+| test/invariants/TargetFunctionsBase.sol             | 95.08% (58/61)    | 96.05% (73/76)    | 50.00% (12/24)   | 80.00% (8/10)    |
+| test/invariants/TargetFunctionsNoLeverage.sol       | 0.00% (0/175)     | 0.00% (0/213)     | 0.00% (0/48)     | 0.00% (0/12)     |
+| test/invariants/TargetFunctionsWithLeverage.sol     | 67.08% (108/161)  | 65.44% (142/217)  | 36.67% (22/60)   | 60.71% (17/28)   |
+| test/invariants/echidna/EchidnaLeverageTester.sol   | 0.00% (0/2)       | 0.00% (0/2)       | 100.00% (0/0)    | 0.00% (0/1)      |
+| test/invariants/echidna/EchidnaNoLeverageTester.sol | 0.00% (0/2)       | 0.00% (0/2)       | 100.00% (0/0)    | 0.00% (0/1)      |
+| Total                                               | 47.06% (497/1056) | 47.14% (619/1313) | 28.42% (104/366) | 54.64% (106/194) |
 
 ## Miscellaneous
 Employees of Badger and employees' family members are ineligible to participate in this audit.
