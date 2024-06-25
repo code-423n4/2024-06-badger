@@ -169,11 +169,10 @@ For `ebtc-protocol` test coverage:
 ```bash
 forge coverage
 ```
-<pre>
+
 | File                                                                        | % Lines            | % Statements       | % Branches        | % Funcs           |
 |-----------------------------------------------------------------------------|--------------------|--------------------|-------------------|-------------------|
 | Total                                                                       |<font color="#E9AD0C"> 72.80% (3471/4768) </font>|<font color="#E9AD0C"> 72.15% (4385/6078) </font>|<font color="#E9AD0C"> 56.18% (850/1513) </font>|<font color="#E9AD0C"> 57.22% (622/1087) </font>|
-</pre>
 
 For `ebtc-zap-router` tests;
 ```bash
@@ -193,7 +192,7 @@ forge coverage
 
 
 
-<pre>| File                                                | % Lines           | % Statements      | % Branches       | % Funcs          |
+| File                                                | % Lines           | % Statements      | % Branches       | % Funcs          |
 |-----------------------------------------------------|-------------------|-------------------|------------------|------------------|
 | script/DeployEbtcZapRouter.sol                      |<font color="#F66151"> 0.00% (0/11)      </font>|<font color="#F66151"> 0.00% (0/19)      </font>|<font color="#8B8A88"> 100.00% (0/0)    </font>|<font color="#F66151"> 0.00% (0/1)      </font>|
 | src/EbtcLeverageZapRouter.sol                       |<font color="#33DA7A"> 85.19% (69/81)    </font>|<font color="#33DA7A"> 83.33% (90/108)   </font>|<font color="#E9AD0C"> 67.65% (23/34)   </font>|<font color="#33DA7A"> 75.00% (12/16)   </font>|
@@ -212,7 +211,6 @@ forge coverage
 | test/invariants/echidna/EchidnaLeverageTester.sol   |<font color="#F66151"> 0.00% (0/2)       </font>|<font color="#F66151"> 0.00% (0/2)       </font>|<font color="#8B8A88"> 100.00% (0/0)    </font>|<font color="#F66151"> 0.00% (0/1)      </font>|
 | test/invariants/echidna/EchidnaNoLeverageTester.sol |<font color="#F66151"> 0.00% (0/2)       </font>|<font color="#F66151"> 0.00% (0/2)       </font>|<font color="#8B8A88"> 100.00% (0/0)    </font>|<font color="#F66151"> 0.00% (0/1)      </font>|
 | Total                                               |<font color="#F66151"> 47.06% (497/1056) </font>|<font color="#F66151"> 47.14% (619/1313) </font>|<font color="#F66151"> 28.42% (104/366) </font>|<font color="#E9AD0C"> 54.64% (106/194) </font>|
-</pre>
 
 ## Miscellaneous
 Employees of Badger and employees' family members are ineligible to participate in this audit.
