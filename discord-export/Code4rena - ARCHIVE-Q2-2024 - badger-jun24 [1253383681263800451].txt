@@ -1,0 +1,1374 @@
+==============================================================
+Guild: Code4rena
+Channel: ARCHIVE-Q2-2024 / badger-jun24
+==============================================================
+
+[06/21/2024 16:42] knownfactc4_29311 (pinned)
+👋 Hello and welcome to the audit channel for the $40,000 in USDC **eBTC Zap Router** audit!
+
+📆 Audit opens 06/24/2024 20:00 (20:00 UTC) and runs through 07/08/2024 20:00 (20:00 UTC) (14 days).
+
+Please give a warm welcome to the BadgerDAO team, particularly @jwei and @Alex The Entreprenerd, who will be available for questions either here in the channel or via a PRIVATE thread in the PT and CEST  timezones. 
+
+🤖 **Documentation bot assistance:** For general questions about the codebase, give our documentation bot a try, by tagging `@Docs Wolf` in any thread (private or public) and asking your question. The bot will make its best attempt to answer based on the codebase and documentation, and link you to relevant resources.  
+
+We'll be posting relevant links, documentation, etc. here, so if you intend to participate in this audit, consider enabling notifications for this channel. 🐺 ⏰
+
+Audit Page: https://code4rena.com/audits/2024-06-ebtc-zap-router
+
+{Reactions}
+🥲 👋 (2) 
+
+[06/21/2024 16:42] knownfactc4_29311
+Pinned a message.
+
+
+[06/24/2024 17:32] realfakepicnic
+@🐺Wardens One hour until the LIVE code walk through! Join us in the BadgerDAO Code Walk-Through channel: https://discord.gg/BPJNDuK4?event=1252729765807259649
+
+{Reactions}
+💯 (2) 🍄 
+
+[06/24/2024 19:01] alextheentreprenerd
+Dropping the coverage reports for:
+eBTC latest: https://getrecon.xyz/shares/7f1dffab-9c6e-4a9a-9265-eb4d521da3a1
+
+eBTC leverage router: https://getrecon.xyz/shares/66d03ef1-98ff-4ed3-b5d4-eb6225f78655
+
+You can download corpus to be able to quickly re-run invariant tests
+
+{Reactions}
+10_10 
+
+[06/24/2024 20:02] C4 (pinned)
+**Automated Findings / Publicly Known Issues**
+
+Reminder: all [Automated Findings / Publicly Known Issues](https://github.com/code-423n4/2024-06-badger#automated-findings--publicly-known-issues) are out of scope and ineligible for awards.
+
+{Embed}
+https://github.com/code-423n4/2024-06-badger
+GitHub - code-423n4/2024-06-badger
+Contribute to code-423n4/2024-06-badger development by creating an account on GitHub.
+Code4rena - ARCHIVE-Q2-2024 - badger-jun24 [1253383681263800451].txt_Files/88e6d4d3-b141-478d-8ec7-e958bd84142e-B63B4
+
+{Reactions}
+🔥 
+
+[06/24/2024 20:05] nfmelendez
+is a private audit?
+
+
+[06/24/2024 20:05] alaga
+Was this recorded?
+
+
+[06/24/2024 20:12] nikolap2015
+Why does it say a private audit?
+
+
+[06/24/2024 20:14] realfakepicnic
+Yep; we're working on video editing now and will share it as soon as it's done 🙂
+
+{Reactions}
+👍 (6) 
+
+[06/24/2024 20:25] chista0x
+Do you mean `KYC` is required?
+
+
+[06/24/2024 20:40] thebrittfactor
+Pinned a message.
+
+
+[06/24/2024 23:45] realfakepicnic (pinned)
+✨ Code walk-through recording is ready, for anyone who missed it/needs a refresher: https://youtu.be/iqi5SGgQ2IE
+
+{Embed}
+Code4rena
+https://www.youtube.com/watch?v=iqi5SGgQ2IE
+Code4rena Badger Code Walk-Through
+Learn about the BadgerDAO's BTC Zap Router and what to focus on during the June 24th - July 8th $40,000 audit competition on Code4rena
+Code4rena - ARCHIVE-Q2-2024 - badger-jun24 [1253383681263800451].txt_Files/maxresdefault-AC8B0.jpg
+
+{Reactions}
+🔥 (3) 👍 🍄 
+
+[06/24/2024 23:47] itsmetechjay
+Pinned a message.
+
+
+[06/25/2024 00:10] itsmetechjay
+@nfmelendez @nikolap @chista0x this is a public audit.  No KYC required. Apologies for the confusion there.
+
+{Reactions}
+👍 (2) 
+
+[06/25/2024 06:10] dmoore6127
+any previous audit available for this contest?
+
+
+[06/25/2024 06:25] bitdoctor0524
+@Docs Wolf Explain attack idea
+
+{Reactions}
+kek_wait (2) 
+
+[06/25/2024 07:03] 0xshaheen
+why attack idea? directly ask for vulnerabilities ser xD
+
+{Reactions}
+🫡 
+
+[06/25/2024 07:04] 0xshaheen
+jk, btw @Apollo, docs wolf only work in threads
+
+{Reactions}
+thankyou 
+
+[06/25/2024 07:35] alextheentreprenerd (pinned)
+Previous audits from eBTC (Includes Leverage Macro Base):
+https://gist.github.com/GalloDaSballo/4e345cec4e3aef9682f320149b3027aa
+
+
+[06/25/2024 08:14] dmoore6127
+great! thanks
+
+
+[06/25/2024 09:38] kartoonjoy
+Pinned a message.
+
+
+[06/25/2024 18:18] mladenov0603
+Is there a better docs than this in readme file?
+
+
+[06/25/2024 18:20] alextheentreprenerd
+An additional tour of the LeverageMacro (contract that was already audited that the router extends) is here:
+https://youtu.be/QWIB4avTkt4?si=ZbzVa8qNRPtNRuAH&t=2491
+
+{Reactions}
+👍 
+
+[06/25/2024 18:21] alextheentreprenerd (pinned)
+All functions have natspec:
+https://github.com/ebtc-protocol/ebtc-zap-router/blob/main/src/EbtcLeverageZapRouter.sol
+
+Workshop recording is here:
+https://www.youtube.com/watch?v=iqi5SGgQ2IE&feature=youtu.be
+
+{Reactions}
+✅ 🙏 
+
+[06/25/2024 18:25] kartoonjoy
+Pinned a message.
+
+
+[06/25/2024 18:35] mladenov0603
+What about `ZapRouterBase.sol`, where is the natspec?
+
+
+[06/25/2024 18:43] alextheentreprenerd
+Stuck in traffic
+
+{Reactions}
+😆 (7) 
+
+[06/25/2024 21:32] th3l1ghtd3m0n
+What is the default value of `MIN_CHANGE` in `ZapRouterBase.sol`?
+
+
+[06/25/2024 22:10] 0xsafuwei
+MIN_CHANGE is 1000
+
+{Reactions}
+👍 
+
+[06/26/2024 05:03] agadzhalov
+Will there be a bot (automated findings) report?
+
+{Reactions}
+✅ 
+
+[06/26/2024 08:18] kartoonjoy
+Apologies for the delay. It should be up today.
+
+{Reactions}
+🙏 (2) 
+
+[06/26/2024 08:49] alexanderhawl
+After git clone, the yarn can't work.
+
+
+[06/26/2024 08:50] alexanderhawl
+In ebtc-protocol, yarn went wrongly. ERROR: "prepare:set-version" exited with 1.
+
+
+[06/26/2024 09:18] alextheentreprenerd
+Never saw that error, as you can see the repo compiles on any linux:
+https://getrecon.xyz/shares/66d03ef1-98ff-4ed3-b5d4-eb6225f78655
+
+
+[06/26/2024 10:46] mladenov0603
+@Alex The Entreprenerd can you please check private thread
+
+
+[06/26/2024 11:15] billmpjc
+submissions are getting insanely hot
+
+
+[06/26/2024 13:52] tutkata
+How can you see that?
+
+
+[06/26/2024 14:05] billmpjc
+I mean quality-wise, and no medium/lows are welcomed
+
+
+[06/26/2024 14:07] kartoonjoy
+Hi. This audit allows for HMs as well as QA.
+
+
+[06/26/2024 14:08] billmpjc
+Thank you for clarify. I just got that sense from loopfi though I don't see any note about that.
+So I assumed the same for all contests.
+
+
+[06/26/2024 14:09] kartoonjoy
+No. Specific details in the READMEs will vary per audit.
+
+{Reactions}
+💜 (3) 👍 (4) thankyou (2) 
+
+[06/27/2024 11:05] mgnfy_view
+What is collValidationBufferBPS?
+
+
+[06/27/2024 11:06] mgnfy_view
+Also what's done with the initial margin stETH that's transferred to the router?
+
+
+[06/27/2024 11:06] mgnfy_view
+Can't see it being processed anywhere
+
+
+[06/27/2024 12:19] alextheentreprenerd
+https://github.com/ebtc-protocol/ebtc-zap-router/blob/4b37cce03c16b5e5caf5a9aab0bab5d344a587d2/src/LeverageZapRouterBase.sol#L268-L269
+
+```solidity
+                    value:  _totalCollateral * _collValidationBuffer / BPS,
+
+```
+
+It's used for a laxer check post swap
+
+
+[06/27/2024 12:19] alextheentreprenerd
+Yeah the variable is unused, but the stETH deposit amount is used instead
+
+
+[06/27/2024 15:06] block_chomper
+@Alex The Entreprenerd How are the inputs for `_upperHint` and `_lowerHint` calculated?
+
+
+[06/27/2024 15:09] alextheentreprenerd
+Those are IDs of Cdps in the linked list, are computed offChain
+There's also an helper contract here: https://github.com/ebtc-protocol/ebtc/blob/bfbe735865989df23d840e5df8c57cca88336a37/packages/contracts/contracts/HintHelpers.sol#L4
+
+{Reactions}
+🫡 
+
+[06/27/2024 15:09] block_chomper
+Thanks
+
+{Reactions}
+cheers_badger 
+
+[06/27/2024 18:31] ivanfitro
+hey! I dont understand why to openCDPWithEth() needs to do a flash loan? Why somebody wants to do that?
+
+
+[06/27/2024 19:16] 0xsafuwei
+The LeverageZapRouter is specifically designed to create leveraged CDP positions. In order to avoid looping manually, a flash loan is used for the collateral that will be paid back with the borrowed eBTC.
+
+
+[06/27/2024 19:16] 0xsafuwei
+normal unleveraged positions will not go through this router
+
+
+[06/27/2024 19:18] ivanfitro
+mmm...ok i see, but the flash loan needs to be paid in the same transaction, this is done first by the protocol and next the user when closes the CDP returns this eBTC to the protocol?
+
+
+[06/27/2024 19:18] 0xsafuwei
+yeah, the flash loan is paid back in the same transaction with the borrowed eBTC (converted to stETH with a swap)
+
+
+[06/27/2024 19:20] ivanfitro
+ok but if the eBTC that users borrows is converted to stETH to paid the flash loan, the user doesn't has this eBTC to do things no?
+
+
+[06/27/2024 19:21] 0xsafuwei
+yeah, the user does not receive any eBTC in this case, just a leveraged position
+
+
+[06/27/2024 19:21] 0xsafuwei
+normally, you would have to do that manually
+
+
+[06/27/2024 19:22] ivanfitro
+ok thank you so much!!! i understand it now
+
+{Reactions}
+👍 
+
+[06/27/2024 19:22] 0xsafuwei
+deposit stETH -> mint eBTC -> trade ebtc for stETH -> deposit more
+
+{Reactions}
+👍 (4) 
+
+[06/27/2024 19:23] ivanfitro
+i guess that this leverage position has more risk than a normal one in and can be liquidated sooner
+
+
+[06/27/2024 19:24] ivanfitro
+A picture is worth a thousand words👍
+
+{Reactions}
+👍 (2) 
+
+[06/27/2024 19:34] ivanfitro
+one more thing sorry, but is not better not using a flash loan, only swaps the eBTC minted to stETH and redeposit?
+
+
+[06/27/2024 19:39] 0xsafuwei
+then you'd need to keep looping right?
+
+
+[06/27/2024 19:40] 0xsafuwei
+a flash loan would get you to the end state in one go
+
+
+[06/27/2024 19:41] 0xsafuwei
+isn't that what everyone wants in defi? max leverage? 🙂
+
+
+[06/27/2024 19:55] ivanfitro
+ooh ok i see, perfect!😄
+
+
+[06/27/2024 19:55] ivanfitro
+yes!!!
+
+
+[06/27/2024 21:04] findngnemo
+what is delta ?
+
+```
+event ZapOperationEthVariant(
+        bytes32 indexed cdpId,
+        EthVariantZapOperationType indexed operation,
+        bool isCollateralIncrease,
+        address indexed collateralToken,
+       @> uint256 collateralTokenDelta,
+        @>uint256 stEthDelta,
+        address cdpOwner
+    );
+```
+
+
+[06/27/2024 21:27] 0xsafuwei
+basically the amount of collateral token / stETH transferred from the user
+
+
+[06/27/2024 21:28] 0xsafuwei
+stEthDelta is always stETH, collateralTokenDelta can be (eth/wstETH/weth etc.)
+
+{Reactions}
+💯 (2) 
+
+[06/28/2024 00:05] lian0669
+I do not see that user pay back to flash loaner, Or do I miss something ? thanks
+
+
+[06/28/2024 00:19] 0xsafuwei
+the flash lender will pull the funds back, for example https://github.com/ebtc-protocol/ebtc/blob/main/packages/contracts/contracts/ActivePool.sol#L311
+
+
+[06/28/2024 00:19] 0xsafuwei
+ebtc protocol itself is not in scope though
+
+
+[06/28/2024 00:19] 0xsafuwei
+so you can assume the flash lender is working correctly
+
+
+[06/28/2024 00:20] lian0669
+Got it, Thanks
+
+
+[06/28/2024 11:51] mgnfy_view
+If I get it correctly, user deposits some stETH margin, then flash loans some stETH, then using the margin stETH + the flash loan stETH mints debt eBTC, then swaps eBTC for stETH, then some of that stETH is used to pay back flash loan, and some stETH is returned
+
+
+[06/28/2024 11:52] mgnfy_view
+What exactly is the leveraged position here?
+
+
+[06/28/2024 13:42] wanziskata
+@jwei / @Alex The Entreprenerd I've opened a private thread, please check it out once possible. Thanks!
+
+
+[06/28/2024 13:43] agadzhalov
+I don't get where the profits for user and for the protocol come from. Also are there any fees involved?
+
+In this scenario 
+User has 10 stETH -> Flash Loans 90 stETH -> Provides 100 stETH in total as collateral -> Opens CDP position and mint eBTC -> Swaps eBTC for stETH -> Repays the flash loan with stETH
+
+What happens then? How much the user has earned and how much the protocol has earned/collected in fees? Also is there anything that happens between opening CDP position and before swap of eBTC and stETH?
+
+
+[06/28/2024 13:47] ivanfitro
+I think you are right, you are leveraged because you has more collateral (10stETH and now 100stETH) this is why is leveraged, because you only can access to 10stETH, but using the FL you can increment your collaeral position
+
+
+[06/28/2024 14:18] ivanfitro
+Which protocol will be used for obtain the Flash Loan?
+
+
+[06/28/2024 15:20] alextheentreprenerd
+eBTC doesn't add a reentrant lock on FL, so you can FL it's own reserves to lever up:
+
+eBTC AP:
+https://github.com/ebtc-protocol/ebtc/blob/bfbe735865989df23d840e5df8c57cca88336a37/packages/contracts/contracts/ActivePool.sol#L289
+
+eBTC BO:
+https://github.com/ebtc-protocol/ebtc/blob/bfbe735865989df23d840e5df8c57cca88336a37/packages/contracts/contracts/BorrowerOperations.sol#L1091
+
+{Reactions}
+👍 
+
+[06/28/2024 18:09] mgnfy_view
+Yeah, so as I understand now, you can leverage the 100 stETH locked up as collateral in the contract but you don't have any eBTC because it's all used up in the swap to pay the flash loan. If the price of stETH increases, you can flash loan eBTC and pay your debt and get your stETH back.
+
+
+[06/28/2024 18:10] mgnfy_view
+However, if the price of stETH decreases then you are liquidatable?
+
+
+[06/28/2024 18:11] mgnfy_view
+How can you get back your collateral in this case?
+
+
+[06/28/2024 18:29] alextheentreprenerd
+You can check real liquidations here: https://ebtc.blockanalitica.com/liquidations
+
+
+[06/28/2024 18:54] laxmiprasad
+@Alex The Entreprenerd Can you provide any links to LeverageZapRouterBase contract ?
+
+
+[06/28/2024 19:10] 0xsafuwei
+https://github.com/code-423n4/2024-06-badger/blob/main/ebtc-zap-router/src/LeverageZapRouterBase.sol
+
+{Reactions}
+👍 
+
+[06/28/2024 20:41] mladenov0603
+Does protocol plan to use other erc20 tokens?
+
+
+[06/28/2024 20:49] 0xsafuwei
+not directly, no
+
+
+[06/28/2024 20:50] 0xsafuwei
+it's possible for the protocol to give eBtc minting auth to other contracts
+
+
+[06/28/2024 20:50] 0xsafuwei
+but it will be up to those contracts to deal with other erc20 tokens
+
+
+[06/28/2024 20:50] 0xsafuwei
+and auth is controlled by governance
+
+
+[06/29/2024 03:05] weebad_
+@jwei @Alex The Entreprenerd  
+What's the purpose of the `willSweep`
+internal immutable boolean state variable in the LeverageMacroBase contract?
+
+
+[06/29/2024 03:12] 0xsafuwei
+you can make the LeverageMacroBase contract sweep ebtc/stETH back to the sender automatically if you set `willSweep` to true
+
+
+[06/29/2024 03:13] 0xsafuwei
+`LeverageMacroBase` is meant to be a generic implementation for things that require flashLoan/leverage, not just for zaps, so it has some features that may or may not be used by the router
+
+
+[06/29/2024 03:13] weebad_
+Thanks 😊
+
+
+[06/29/2024 07:19] mgnfy_view
+What is `tradeData.exchangeData`?
+
+
+[06/29/2024 07:19] mgnfy_view
+Does it store information about the tokens, token amounts, deadline, slippage in encoded form?
+
+
+[06/29/2024 08:25] alextheentreprenerd
+Yes, it's the data to swap on either 1inch or 0x
+
+
+[06/29/2024 09:04] agadzhalov
+What is `zap fee` (`defaultZapFee = 25; // 25 BPS`) ? Is this the fee that's charged only when debt increases?
+
+
+[06/29/2024 09:10] mgnfy_view
+No validation for that?
+
+
+[06/29/2024 09:18] agadzhalov
+What is the purpose of `_positionManagerPermit`?
+
+
+[06/29/2024 09:30] blckhv
+explained here - https://discord.com/channels/810916927919620096/1253383681263800451/1255226446742294588
+
+{Reactions}
+👍 
+
+[06/29/2024 09:44] agadzhalov
+all of the collateral different than stETH that is provided wstETH, ETH, WETH is then converted to stETH and deposited into Lido, is that correct? Do any of the contracts in scope lock any tokens?
+
+
+[06/29/2024 12:11] mgnfy_view
+Yes, all the margin balances are converted to stETH before moving forward. It is an invariant that the zap router should not hold/lock any tokens. Both residue eBTC and stETH are sweeped to the caller in each transaction
+
+{Reactions}
+🙏 
+
+[06/29/2024 15:29] mgnfy_view
+QA awards includes lows and gas findings or just lows?
+
+
+[06/29/2024 17:12] 0xsafuwei
+there is no validation for the exchange payload itself, but we do have post swap checks (minExpected) as well as post operation checks (verify debt + collateral numbers)
+
+
+[06/29/2024 17:33] 0xsafuwei
+yeah, it's only charged when debt increases (open, adjust lever up). It's just a fee for using the router.
+
+{Reactions}
+👍 
+
+[06/29/2024 17:36] 0xsafuwei
+It's the encoded DEX calldata. In practice, it's most likely going to be w/e data you get back from 0x (https://0x.org/docs/0x-swap-api/api-references/get-swap-v1-quote)
+
+
+[06/29/2024 18:58] sp1cymeatball
+@jwei  hi! Why higher margin means lower CR?
+https://github.com/code-423n4/2024-06-badger/blob/main/ebtc-zap-router/src/EbtcLeverageZapRouter.sol#L30
+
+
+[06/30/2024 00:57] 0xsafuwei
+might be a typo in the comment. Higher margin should give you higher CR
+
+{Reactions}
+👍 
+
+[06/30/2024 03:24] louislung
+does anyone encounter OutOfGas error when running `forge test` in ebtc-protocol/packages/contracts? the error is coming from `foundry_test/CDPManager.redemptions.t.sol:CDPManagerRedemptionsTest`
+
+{Attachments}
+Code4rena - ARCHIVE-Q2-2024 - badger-jun24 [1253383681263800451].txt_Files/image-5CED9.png
+
+
+[06/30/2024 08:18] louislung
+Started a thread.
+
+
+[06/30/2024 08:19] mgnfy_view
+What is the purpose of cdp status check in PostCheckParams? How/where is the cdp status set/unset?
+
+
+[06/30/2024 08:20] mgnfy_view
+```javascript
+    struct PostCheckParams {
+        CheckValueAndType expectedDebt;
+        CheckValueAndType expectedCollateral;
+        // Used only if cdpStats || isClosed
+        bytes32 cdpId;
+        // Used only to check status
+@>      ICdpManagerData.Status expectedStatus; // NOTE: THIS IS SUPERFLUOUS
+    }
+```
+
+
+[06/30/2024 08:32] 0xsafuwei
+it's passed in when we call `_getPostCheckParams`
+https://github.com/code-423n4/2024-06-badger/blob/9173558ee1ac8a78a7ae0a39b97b50ff0dd9e0f8/ebtc-protocol/packages/contracts/contracts/LeverageMacroBase.sol#L235
+(active)
+https://github.com/code-423n4/2024-06-badger/blob/main/ebtc-zap-router/src/LeverageZapRouterBase.sol#L155
+(closedByOwner)
+https://github.com/code-423n4/2024-06-badger/blob/main/ebtc-zap-router/src/LeverageZapRouterBase.sol#L224
+
+
+[06/30/2024 08:35] 0xsafuwei
+only LeverageMacroBase is in scope for this audit (https://github.com/code-423n4/2024-06-badger/blob/9173558ee1ac8a78a7ae0a39b97b50ff0dd9e0f8/ebtc-protocol/packages/contracts/contracts/LeverageMacroBase.sol) and it's pulled in as a dependency in https://github.com/code-423n4/2024-06-badger/tree/main/ebtc-zap-router. So, you should run `forge test` from that repo
+
+
+[06/30/2024 08:56] mgnfy_view
+Why is excessively safe call being used when the approved address is a trusted dex? (0x or 1Inch)
+
+
+[06/30/2024 10:00] sp1cymeatball
+@jwei why not equal check?
+https://github.com/code-423n4/2024-06-badger/blob/main/ebtc-zap-router/src/LeverageZapRouterBase.sol#L268-L269
+shares to token conversion error?
+
+
+[06/30/2024 11:53] alextheentreprenerd
+Why not
+
+{Reactions}
+😂 
+
+[06/30/2024 13:02] _rickk137
+@jwei can u explain collValidationBuffer this param?
+
+
+[06/30/2024 13:21] saediek
+Yeah 👍
+
+
+[06/30/2024 13:23] saediek
+To what I can understand it acts like a slippage parameter just enforcing that the current state of your cdp is what’s expected
+
+
+[06/30/2024 13:30] azadxx
+Guys as a security researcher we expect proper documentation from the team in order to understand it first . There is nothing much in readme .
+
+
+[06/30/2024 13:30] _rickk137
+https://docs.ebtc.finance/ebtc
+
+{Embed}
+https://docs.ebtc.finance/ebtc
+Overview | eBTC
+Code4rena - ARCHIVE-Q2-2024 - badger-jun24 [1253383681263800451].txt_Files/WOUz8MyGRQAa1OMvSJjN-1C914
+
+
+[06/30/2024 13:31] _rickk137
+thanks
+
+
+[06/30/2024 13:44] _rickk137
+but im not sure that works like slippage , I need a clear definition
+
+
+[06/30/2024 17:17] 0xsafuwei
+we do post operation checks to make sure the debt and collateral are the same as what we are expecting. `collValidationBuffer` allows the frontend (user) to relax that comparison. Setting it to 0 makes it very strict and adjusting it up and down gives you some room depending on what you think the slippage will be.
+
+{Reactions}
+thankyou 
+
+[06/30/2024 17:47] saediek
+You said setting it to zero would result in a strict slippage ??
+
+
+[06/30/2024 17:47] 0xsafuwei
+setting it to 0 will make  the post operation validation strict
+
+
+[06/30/2024 17:48] 0xsafuwei
+say you expect after openCdp, the collateral will be 5 stETH
+
+
+[06/30/2024 17:48] 0xsafuwei
+setting it to 0 will ensure that the collateral is at least 5 stETH
+
+
+[06/30/2024 17:48] 0xsafuwei
+adjusting the parameter will allow say 4.9999 stETH
+
+
+[06/30/2024 17:48] 0xsafuwei
+to pass the check
+
+
+[06/30/2024 17:49] saediek
+https://github.com/code-423n4/2024-06-badger/blob/9173558ee1ac8a78a7ae0a39b97b50ff0dd9e0f8/ebtc-zap-router/src/LeverageZapRouterBase.sol#L268-L269
+
+{Embed}
+https://github.com/code-423n4/2024-06-badger/blob/9173558ee1ac8a78a7ae0a39b97b50ff0dd9e0f8/ebtc-zap-router/src/LeverageZapRouterBase.sol
+2024-06-badger/ebtc-zap-router/src/LeverageZapRouterBase.sol at 917...
+Contribute to code-423n4/2024-06-badger development by creating an account on GitHub.
+Code4rena - ARCHIVE-Q2-2024 - badger-jun24 [1253383681263800451].txt_Files/88e6d4d3-b141-478d-8ec7-e958bd84142e-B63B4
+
+
+[06/30/2024 17:49] saediek
+Setting it to zero would result in expectedColl being zero
+
+
+[06/30/2024 17:50] saediek
+Pls correct me if I am wrong
+
+
+[06/30/2024 17:50] saediek
+And that would cause the tx to always fail
+
+
+[06/30/2024 17:50] 0xsafuwei
+sorry, not literally 0, I meant 0 buffer, which is 100% = BPS
+
+
+[06/30/2024 17:51] saediek
+Ooh 👍
+
+
+[06/30/2024 17:51] 0xsafuwei
+it's accurate down to basis points
+
+
+[06/30/2024 21:46] fastchecker_27
+Hello everyone? There is something strange about Renzo contest that have already passed. Where can I see the storage of the Renzo contest of "30 Apr 11:00 PM - 8 May"?
+
+
+[06/30/2024 23:10] weebad_
+@jwei I believe it's imperative users put up a margin collateral when opening a cdp, right?  Is there some kind of invariant that must hold with respect to the expected Debt  for the cdp and this margin collateral?
+
+
+[07/01/2024 00:23] weebad_
+@Docs Wolf what happens when a user calls closeCdp?
+
+
+[07/01/2024 04:55] louislung
+i saw there is a test utils `_generateOneTimePermitFromFixedTestUser` , i wonder in production, how this permit will be generated, it is generated by application instead of smart contract?
+
+
+[07/01/2024 04:57] 0xsafuwei
+yeah, it's generated by the frontend
+
+
+[07/01/2024 05:46] mgnfy_view
+Yes, some amount of margin collateral must be supplied. Otherwise the eBTC debt obtained would not be enough to repay the flash loan (110% over-collateralisation)
+
+
+[07/01/2024 06:03] robert00_56
+Hi, when margin == 0, what happened? nothing? Then what is mean "Higher margin should give you higher CR"? I do not understand this well
+
+
+[07/01/2024 07:48] mgnfy_view
+I think lower margin will risk you to be liquidated
+
+
+[07/01/2024 07:48] mgnfy_view
+Are gas reports accepted for this audit?
+
+
+[07/01/2024 08:56] weebad_
+@mgnfy_view thanks for your response
+
+{Reactions}
+💜 
+
+[07/01/2024 13:26] fastchecker_27
+good, however, I cannot find the source code for liquidation when the margin is low.
+
+
+[07/01/2024 13:39] alextheentreprenerd
+Code for liquidations is here: https://github.com/ebtc-protocol/ebtc/blob/main/packages/contracts/contracts/LiquidationLibrary.sol
+
+
+[07/01/2024 13:39] alextheentreprenerd
+It's not part of the scope for the contest, but we do have a bug bounty
+
+
+[07/01/2024 13:58] fastchecker_27
+thank you for your reply.
+
+
+[07/01/2024 13:58] fastchecker_27
+and check my DM
+
+
+[07/01/2024 13:59] alextheentreprenerd
+Can't find any DM from you, try again or do a private thread
+
+
+[07/01/2024 14:00] fastchecker_27
+sorry, I have mistake. what i mean is private thread.
+
+
+[07/01/2024 23:44] weebad_
+@jwei @mgnfy_view @Alex The Entreprenerd In adjusting a cdp, the code comments reads that, users can make changes to their debt, and even top up their collateral. My question pertains to the Debt Changes. How much Debt Changes can a user make? I believe how much or less of a debt change is dependent on a user's collateral increment changes, right?
+
+
+[07/01/2024 23:51] weebad_
+The adjustment could be a debt repayment, right?
+
+
+[07/01/2024 23:53] 0xsafuwei
+the user can either lever up, borrow more up to max leverage (min CR) or unwind (reduce leverage)
+
+{Reactions}
+👍 
+
+[07/02/2024 10:38] daniel526
+@jwei check private thread kindly
+
+
+[07/02/2024 10:49] mgnfy_view
+@Alex The Entreprenerd In `EbtcLeverageZapRouter::_adjustCdp()` the stETHBalanceChange for the operation is equal to the sum of flash loan amount and stETH margin balance?
+
+
+[07/02/2024 15:04] 0xsafuwei
+for lever up, stETHBalanceChange = flashLoanAmount + marginBalance - fees, for delever, stETHBalanceChange = flashLoanAmount (converted from eBtc) + fees
+
+
+[07/02/2024 16:20] mgnfy_view
+But if that's so, then why is the margin balance added again to the stETH balance change?
+
+
+[07/02/2024 16:21] mgnfy_view
+```javascript
+uint256 marginDecrease = _params.isStEthBalanceIncrease ? 0 : _params.stEthBalanceChange;
+        if (!_params.isStEthMarginIncrease && _params.stEthMarginBalance > 0) {
+            marginDecrease += _params.stEthMarginBalance;
+        }
+
+        uint256 marginIncrease = _params.isStEthBalanceIncrease ? _params.stEthBalanceChange : 0;
+        if (_params.isStEthMarginIncrease && _params.stEthMarginBalance > 0) {
+            marginIncrease += _params.stEthMarginBalance;
+        }
+```
+
+
+[07/02/2024 16:22] 0xsafuwei
+yeah, it's added automatically, the UI only needs to provide flashLoan amount and marginBalance
+
+
+[07/02/2024 16:22] mgnfy_view
+Also, you need to supply margin for delever?
+
+
+[07/02/2024 16:22] 0xsafuwei
+for delever, it can be set to 0
+
+
+[07/02/2024 16:23] mgnfy_view
+Alright!
+
+
+[07/02/2024 19:26] agadzhalov
+Are the contracts from `ebtc-zap-router/source/invariants` deployed or will be deployed on mainnet or are these contracts used only for testing purposes?
+
+
+[07/02/2024 21:41] 0xsafuwei
+only for testing
+
+{Reactions}
+👍 
+
+[07/03/2024 08:01] steadyman.
+@jwei Please check my DM
+
+
+[07/03/2024 10:10] vizay315
+can anyone tell us high level overview of this protocol.
+
+
+[07/03/2024 11:53] jes16jupyter
+Hi @jwei If `stETHBalanceChange = flashLoanAmount + marginBalance - fees` , how will the flashloan be repaid. I guess it's `ebtc minted(swapped to stETH) + part of marginBalance`?
+
+
+[07/03/2024 12:01] mgnfy_view
+I think margin balance + flashloan stETH goes into the protocol to mint eBTC, then the eBTC is swapped for stETH and flashloan is paid back
+
+
+[07/03/2024 12:03] jes16jupyter
+Got it. That makes sense!
+
+
+[07/03/2024 12:04] jes16jupyter
+Thanks
+
+
+[07/03/2024 12:04] jes16jupyter
+So it seems the leverage won't be that high. like 10X or 100X as we see in CEX
+
+
+[07/03/2024 12:06] jes16jupyter
+But for delever, when we have a flashloan of `ebtc` to reduce the debt, how could we repay it? This still a bit confused to me. Seems like when we repay some `ebtc` debt, some `stETH` could be withdrawn, and we swap that to pay back
+
+
+[07/03/2024 12:12] demorextess
+let say CR 120%, if you reduce your debt like 100$ eBTC with 100% flash loan , you will get 120$ as stETH from CDP. You should set trade data correctly, it's used for swapping this stETH to eBTC. In this scenario you should set swap amount to 100$ minimum in order to repay 100$ eBTC flash loan. And the remainning 20$ is yours, it can be eBTC or stETH based on your tradedata
+
+{Reactions}
+🔥 (2) 
+
+[07/03/2024 12:14] demorextess
+Btw also there are some fees those are not exact amounts, just simulation
+
+
+[07/03/2024 12:17] jes16jupyter
+Thanks, so it seems that by reducing some debts, some assets are free to use. You could get 120$ or 110$ or kind of less in `stETH` (but should cover flashloan and fees). In this case, the `CR` could go higher if you withdraw less.
+
+
+[07/03/2024 12:17] jes16jupyter
+The whole system looks like a leverage of STETH/EBTC (only for Long) through the use of Lending/Flashloan to me.
+
+
+[07/03/2024 12:23] demorextess
+Your welcome, In my example CR is not changed, because still my remainning eBTC debt backed by same proportion of stETH. But of course you can increase this CR by paying your eBTC debt without claimming the stETH
+
+
+[07/03/2024 12:23] demorextess
+Yeah similar
+
+{Reactions}
+🫡 
+
+[07/03/2024 12:24] jes16jupyter
+The art of DEFI...
+
+{Reactions}
+💯 (2) 
+
+[07/03/2024 14:28] demorextess
+I should say that, as a security researcher, I don't like this post checks mechanism 😂
+
+
+[07/03/2024 14:29] mgnfy_view
+Yeah lol
+
+
+[07/03/2024 14:29] mgnfy_view
+No chance
+
+{Reactions}
+💯 
+
+[07/03/2024 18:06] ivanfitro
+which protocol will be used to flash loan stETH?
+
+
+[07/03/2024 18:11] 0xsafuwei
+ebtc ActivePool https://github.com/code-423n4/2024-06-badger/blob/main/ebtc-protocol/packages/contracts/contracts/ActivePool.sol
+
+{Reactions}
+👍 (2) 
+
+[07/03/2024 22:26] rahiti
+Hello, I've read the whole channel but still can't get it clear.
+When opening a leverage CDP, at the end of the transaction, does the user hold any token? I assume he should hold some eBTC which he could use right away to repay his debt and withdraw his collateral (assuming no price fluctuation happened), am I correct?
+
+
+[07/03/2024 22:32] 0xsafuwei
+no ebtc, at the end of the transaction, the user has a leveraged cdp position and maybe some stETH dust that gets swept back
+
+{Reactions}
+👍 
+
+[07/03/2024 22:34] rahiti
+And he is able to close it right away? Without repaying anything?
+
+
+[07/03/2024 22:34] 0xsafuwei
+yeah, closing a leveraged position will get your initial margin back - fees and slippage
+
+
+[07/03/2024 22:35] 0xsafuwei
+it's like buying a house, you put a certain amount of money down and end up with a house. If you sell the house right away, you get your initial down payment back - closing costs
+
+{Reactions}
+❤️ 
+
+[07/03/2024 22:44] rahiti
+I see it clearly now, thank you for the answer
+The code gives me a headache but is very interesting to study
+
+{Reactions}
+👍 (2) 
+
+[07/04/2024 11:38] weebad_
+Which will be in stEth, right?
+
+
+[07/04/2024 13:45] 0xsafuwei
+yeah, or wstEth, the user can choose
+
+
+[07/04/2024 14:50] steadyman.
+@jwei Please check my DM
+
+
+[07/04/2024 15:24] stuart_the_minion
+@jwei , please check mly dm, too.
+
+
+[07/05/2024 10:31] tamoghna.
+what is the difference between `eBTCZap` and `eBTCLeverageZap` ?
+
+
+[07/05/2024 12:55] mgnfy_view
+The normal zap router doesn't use flash loan to open a leveraged position.
+
+
+[07/05/2024 12:55] mgnfy_view
+It can open normal cdp positions only
+
+
+[07/05/2024 12:56] mgnfy_view
+With leverage zap router you can lever up
+
+
+[07/05/2024 13:01] stacey_59672
+Is there any ratio that can be calculated by the formula between flashLoan and margin? For example for X margin we can take Ymax flashloan
+
+
+[07/05/2024 13:18] lian0669
+In doc: 
+Redemptions are the protocol's mechanism for exchanging eBTC for stETH at face value, based on the spot BTC/stETH Oracle price. This means that redemptions allow for swapping at price parity, irrespective of the market price of eBTC.
+
+To initiate a redemption, a user must transfer the desired amount of eBTC into the system. The system then calculates the equivalent amount of stETH based on the latest price returned by the Oracle.
+That means  Redemptions like selling  exact amount  eBTC for stETH at the spot BTC/stETH Oracle price ？？
+
+
+[07/05/2024 14:48] alextheentreprenerd
+Yes + redemption fee (2.5% right now)
+
+
+[07/05/2024 14:49] alextheentreprenerd
+eBTC Explanations:
+https://www.youtube.com/watch?v=QWIB4avTkt4
+
+eBTC Code Walkthrough:
+https://www.youtube.com/watch?v=i1wobqMNtiw
+
+This contest Code Walkthrough (eBTC Leverage Router):
+https://www.youtube.com/watch?v=iqi5SGgQ2IE
+
+
+[07/05/2024 18:45] agadzhalov
+when CDP is opened is considered as increasing of debt, right?
+
+
+[07/05/2024 18:55] 0xsafuwei
+you are creating a new debt position, so yeah
+
+{Reactions}
+👍 (2) 
+
+[07/05/2024 23:42] lian0669
+Thanks
+
+
+[07/06/2024 04:48] daniel526
+@jwei @Alex The Entreprenerd Kindly check Private Thread
+
+
+[07/07/2024 03:01] jes16jupyter
+Hi @jwei @Alex The Entreprenerd  Please also Kindly check my Private Thread
+
+
+[07/08/2024 13:59] johndao1017
+Hi, baf. I can help u.
+
+
+[07/08/2024 14:28] weebad_
+@jwei @Alex The Entreprenerd 
+At any point in time, does the EbtcLeverageZapRouter  contract has some eBTC tokens?
+
+
+[07/08/2024 16:13] tychaios.
+I think not, since it's a Router. It tries to sweep any token left at the end of the operations.
+
+
+[07/08/2024 20:02] C4
+**🚨 AUDIT ALERT**
+
+@🐺Wardens The **eBTC Zap Router** audit is now closed! Huge thanks to everyone who participated 🔍, whether you submitted a finding or not.
+
+What's next: The sponsor team and judge will review the findings over the next couple of weeks. Feel free to ping a Civics-Admin if you have questions along the way!
+
+
+[07/08/2024 20:03] demorextess
+I would like to thank @jwei and @Alex The Entreprenerd. They helped me a lot while the process. 👏
+
+
+[07/08/2024 20:03] 0xdeo
+Where can we see backstage findings?
+
+
+[07/08/2024 20:10] itsmetechjay
+responded in #⭐・sr
+
+
+[07/09/2024 12:40] mgnfy_view
+Very solid codebase, well done badger team!
+
+
+[07/09/2024 12:46] daniel526
+why were there less submissions? 👀
+
+
+[07/09/2024 12:52] demorextess
+Why did you ask, did you submit a lot 👀  😂
+
+
+[07/09/2024 12:53] daniel526
+No, I submitted everything I suspected! 😂
+
+{Reactions}
+😂 (2) 
+
+[07/09/2024 13:06] pkqs90
+Really looking forward to the findings. I read the codebase for a few days but failed to find anything..
+
+
+[07/09/2024 13:15] ui.ui.ui
+How much submissions?
+
+
+[07/09/2024 13:16] daniel526
+190
+
+{Reactions}
+👍 
+
+[07/09/2024 13:16] daniel526
+Same here. Can't wait to see what I missed!
+
+
+[07/09/2024 13:43] sancybars
+Really interesting .. the result will be wild
+
+
+[07/09/2024 14:42] demorextess
+Guys please don't make me excited 😅  I can't sleep, I know it will take longer then my mind's expectation 😂
+
+
+[07/09/2024 14:46] demorextess
+The interesting thing is I started to drink just after contest endings in order to sleep well 😂
+
+
+[07/09/2024 19:03] _killua69_
+Wild 😂
+
+
+[07/10/2024 01:44] 0xh2134
+found a solo critical right after the contest ended? 😆
+
+{Reactions}
+😂 (4) 
+
+[07/10/2024 12:15] pep7siup_
+Does a "duplicate-xx" tag mean the issue is dup of issue #xx?
+
+
+[07/10/2024 12:19] cloudellie
+Yes
+
+{Reactions}
+👍 
+
+[07/12/2024 08:21] mrxsnowden
+Hello friends, I am new in Code4rena , so I have a question , Why i dont have access to this link ? Do I have to be SR to be able to access this link ? How to become a SR ?
+
+
+[07/12/2024 08:57] demorextess
+https://docs.code4rena.com/roles/certified-contributors/sr-backstage-wardens
+
+I also don't see the channel, so I don't know that part but this is about to be SR
+
+{Embed}
+https://docs.code4rena.com/roles/certified-contributors/sr-backstage-wardens
+Security Researcher role (formerly +backstage wardens) | Code4rena
+
+{Reactions}
+🙏 
+
+[07/12/2024 09:49] mrxsnowden
+yeah you are right , only SRs have access to this link , thank you for your response 🙏
+
+{Reactions}
+👍 💯 
+
+[07/12/2024 10:01] demorextess
+Your welcome
+
+
+[07/15/2024 07:50] demorextess
+Any update for the process ?
+
+
+[07/16/2024 09:45] lian0669
+📜
+
+
+[07/17/2024 06:55] pep7siup_
+There's no judging activities since the last sponsor's comment 6 days ago. Wondering why
+
+{Reactions}
+👍 (2) 
+
+[07/21/2024 04:50] chaduke3730
+hi
+
+
+[07/23/2024 12:39] daniel526
+This ain't comming out very well! 😂  PQJA soon
+
+
+[07/23/2024 13:51] demorextess
+What do you mean ?
+
+
+[07/26/2024 15:46] gulshn321
+https://tenor.com/view/hang-on-gif-27524073
+
+{Embed}
+https://tenor.com/view/hang-on-gif-27524073
+Code4rena - ARCHIVE-Q2-2024 - badger-jun24 [1253383681263800451].txt_Files/hang-on-4D439.png
+
+{Reactions}
+😂 (3) 
+
+[07/29/2024 05:19] chaduke3730
+anything new?
+
+
+[07/29/2024 20:37] saediek
+Very soon 🙂
+
+
+[07/29/2024 22:53] gulshn321
+before auditing I used to be a very impatient person but now my patience levels are at its 2**256-1
+
+{Reactions}
+😂 (5) 
+
+[08/01/2024 13:41] sean3416
+https://tenor.com/view/waiting-gif-2108597543879786290
+
+{Embed}
+https://tenor.com/view/waiting-gif-2108597543879786290
+Code4rena - ARCHIVE-Q2-2024 - badger-jun24 [1253383681263800451].txt_Files/waiting-E8F3C.png
+
+
+[08/02/2024 13:29] thebrittfactor
+🤑 🎉  Awards for **Badger eBTC Zap Router**:
+
+$2995.68 » @0xBinChook 
+$2442.81 » @jesjupyter 
+$2418.35 » @Nexarion 
+$2356.92 » @Alix40 
+$2356.92 » @Chad0 
+$2356.92 » @debo 
+$2356.92 » @DemoreX 
+$2356.92 » @Greed 
+$2356.92 » @pep7siup 
+$1912.81 » @chaduke 
+$1912.81 » @Drynooo 
+$1912.81 » @lian886 
+$1912.81 » SBSecurity (@blckhv and @Slavcheww)
+$1912.81 » @stacey 
+$1637.56 » @Rhaydden
+
+🏁 Findings summary
+--------------------------------------
+2 Med risk findings
+78 wardens contributed
+
+Top Gatherer: 0xBinChook, jesjupyter, Nexarion, alix40, Chad0, debo, DemoreX, Greed, pep7siup, chaduke, Drynooo, lian886, SBSecurity and stacey
+
+Top QA report: Rhaydden
+
+Awards will be distributed on Polygon within the next week. Congratulations all!  💸 💸 💸
+
+*Note: If you participated in this audit and don’t see your name on this list, please wait until the report is published and the findings repo is made public to check on your submissions.*
+
+*Also, the leaderboard with these results will be updated at a later date.*
+
+{Reactions}
+🔥 (11) 
+
+[08/02/2024 13:56] chaduke3730
+congrats to all!
+
+
+[08/02/2024 13:58] lian0669
+congrats ！！
+
+
+[08/02/2024 13:59] demorextess
+Congrats guyss 🔥
+
+
+[08/02/2024 14:01] stacey_59672
+congrats ❤️
+
+
+[08/02/2024 15:17] hunter0x01
+@Alix40 is on a crazy run
+Beast 🔥
+
+{Reactions}
+❤️ 
+
+[08/02/2024 15:45] alix40
+https://tenor.com/view/jujutsu-kaisen-nanami-season2-nanami-kento-gif-7106596119470233912
+
+{Embed}
+https://tenor.com/view/jujutsu-kaisen-nanami-season2-nanami-kento-gif-7106596119470233912
+Code4rena - ARCHIVE-Q2-2024 - badger-jun24 [1253383681263800451].txt_Files/jujutsu-kaisen-nanami-1C6E3.png
+
+
+[08/02/2024 15:46] alix40
+Congrats everyone! And thanks badger for sponsoring ❤️
+
+{Reactions}
+💜 (2) 💯 (2) 
+
+[08/02/2024 17:00] sean3416
+:hi5:
+
+
+[08/02/2024 17:07] afriauditor
+Congratulations @Rhaydden
+
+{Reactions}
+❤️ 
+
+[08/02/2024 22:26] forgebyola
+That finding by @0xBinChook is brilliant
+
+
+[08/03/2024 03:40] irving6969
+Congrats @Drynooo
+
+{Reactions}
+🫡 
+
+[08/03/2024 12:37] 0xbinchook
+Thank you kind ser!
+
+
+[08/14/2024 21:21] itsmetechjay
+ℹ️ This channel is pending archive.   As a result, any private threads will be permanently deleted on Friday, 23 August 2024. Please make sure to grab anything you might need before then.
+
+
+[08/22/2024 17:50] itsmetechjay
+ℹ️ Reminder: this channel will be deleted after 24 hours.
+
+
+==============================================================
+Exported 268 message(s)
+==============================================================
